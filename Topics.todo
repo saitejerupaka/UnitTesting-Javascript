@@ -8,10 +8,15 @@
      ☐ Istanbul - Code Coverage Tool      
 
    Simple Web Form:
-     ☐ Demo: js_test     
+     ☐ Demo: js_test
+     ☐ mocha-reporter 
+
 
    AngularJs Testing:
      ☐ Demo: Fashion Blog
 
    Angualar 2:
      ☐ Demo: Tag and Share 
+     ☐ karma dots, progress reporters
+
+

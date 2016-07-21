@@ -1,0 +1,4 @@
+<div *ngFor = "let tag of tags">
+	<div class="tag" [ngStyle]="{'top': tag.top + 'px', 'left': tag.left + 'px'}" (click)='onClick()'>
+	</div>	
+</div>

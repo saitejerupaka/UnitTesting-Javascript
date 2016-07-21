@@ -1,0 +1,21 @@
+<section>
+	<div id="one">
+		<div> Tag on image below: </div>
+		<div id='imageWrapper' class='wrapper' ng-model="wrapper" width="30%">
+			<img #picTag id='picTag'  src='../images/insperity_logo.png' original-Image-Dir height='100'
+			 width='200' class='canvas'  (click)="getMousePos($event)"/>	
+		<tag [tags]= 'originalTags' *ngIf='originalTags.length >= 0'>
+
+		</tag>
+		</div>
+	</div>
+	<div id="two">
+		<div> Scaled Up Image </div>
+		<div id='imageView' class='wrapper' width="70%">
+			<img id='picView' src='../images/insperity_logo.png' height='300' width='300' class='canvas' />	
+			<tag [tags]= 'scaledTags' *ngIf='scaledTags.length >= 0'>
+
+		</tag>
+		</div>
+	</div>
+</section>
