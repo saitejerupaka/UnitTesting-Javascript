@@ -1,0 +1,17 @@
+ Unit Testing Javascript:
+   Tools:
+     ☐ Karma - Test Runner
+     ☐ Mocha - Testing Framework - https://mochajs.org/ 
+     ☐ Chai - Assertion Library - http://chaijs.com/ 
+     ☐ Sinon - for spies, stubs, mocks - http://sinonjs.org/docs/ 
+     ☐ Grunt - Task Runner
+     ☐ Istanbul - Code Coverage Tool      
+
+   Simple Web Form:
+     ☐ Demo: js_test     
+
+   AngularJs Testing:
+     ☐ Demo: Fashion Blog
+
+   Angualar 2:
+     ☐ Demo: Tag and Share 

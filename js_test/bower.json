@@ -1,0 +1,17 @@
+{
+  "name": "js_test",
+  "authors": [
+    "Saitej Erupaka <serupaka@gmail.com>"
+  ],
+  "description": "js test",
+  "main": "security.html",
+  "license": "MIT",
+  "homepage": "security.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
