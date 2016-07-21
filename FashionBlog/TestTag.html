@@ -1,0 +1,70 @@
+<!DocType html>
+<head>
+	<link rel="stylesheet" type="text/css" href="tag.css">
+<script type="text/javascript" src='imageLoad.js'></script>
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	// var can = document.getElementById('imageView');
+
+	// var ctx = can.getContext('2d');
+
+	// var img = new Image();
+	// img.onload = function(){
+	//     can.width = 400;
+	//     can.height = 300;
+	//     ctx.drawImage(img, 0, 0, img.width, img.height,
+	//     					0, 0, 400, 300);
+	// }
+	// img.src = 'images/1.jpg';
+
+	function getMousePos(e, element) {
+        console.log(e.pageX, e.pageY);
+        console.log(element.offsetLeft, element.offsetTop);
+        var parentOffset = $(element).parent().offset(); 
+        console.log(parentOffset)
+        var x = e.pageX - element.offsetLeft - parentOffset.left;
+    	var y = e.pageY - element.offsetTop - parentOffset.top;
+    	var message = 'Mouse position: ' + x + ',' + y;
+    	writeMessage(message, x, y);
+       
+      }
+
+	$("#pic").click(function(e){
+    	getMousePos(e, this);
+	});
+
+   
+	var count = 0;
+    var writeMessage = function(message, X, Y )
+    {
+    	$("#cord").val(message);
+    	var wrapper = $('#imageWrapper').html();
+    	var style = 'top:' +  (Y-5) +'px;left:'  + (X-5) + 'px';
+    	var tagCount = count++;
+    	var addTag = "<div id='tag" + tagCount +"' class='tag' style="+ style +  "> "+ tagCount+"	</div>";
+    	$('#imageWrapper').append(addTag);
+    }
+      
+});
+</script>
+</head>
+<html>
+
+
+<div id='imageWrapper' class='wrapper'>
+	<!-- <canvas id='imageView' class='canvas'></canvas> -->
+	<img id='pic' src='images/1.jpg' height='300' width='400' class='canvas'/>	
+<!-- <div id='tag' class='tag'>	</div> -->
+
+
+</div>
+
+<div>
+	<textarea id='cord'>
+	</textarea>
+</div>
+
+
+</html>

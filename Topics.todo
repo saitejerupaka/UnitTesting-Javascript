@@ -10,13 +10,19 @@
    Simple Web Form:
      ☐ Demo: js_test
      ☐ mocha-reporter 
+     ☐ Code Coverage
 
-
-   AngularJs Testing:
+   AngularJS:
      ☐ Demo: Fashion Blog
+     ☐ inject - $controller, $httpBackend, $filter
+     ☐ Promise
 
-   Angualar 2:
+   Angualar2:
      ☐ Demo: Tag and Share 
      ☐ karma dots, progress reporters
+
+   Reference:
+     ☐ https://pragprog.com/book/vsjavas/test-driving-javascript-applications
+
 
 

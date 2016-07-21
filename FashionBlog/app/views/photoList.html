@@ -1,0 +1,7 @@
+
+<div id="photoList" class='photoList' justified ng-show="controller.showImages">
+	<a  ng-repeat=" image in controller.images" href='#/viewImage?source={{image.webformatURL}}&id={{image.id}}' repeat-Done>
+        <img alt="{{image.id}}"  ng-src={{image.previewURL}} />
+    </a>
+     
+</div>

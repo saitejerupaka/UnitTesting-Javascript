@@ -1,0 +1,17 @@
+<div>
+	<div id='imageWrapper' class='wrapper' ng-model="wrapper" width="30%">
+		<!-- <canvas id='imageView' class='canvas'></canvas> -->
+		<img id='picTag'  ng-src='../images/1.jpg' original-Image-Dir height='100'
+		 width='200' class='canvas'  ng-click="getMousePos($event)"/>	
+	<!-- <div id='tag' class='tag'>	</div> -->
+	</div>
+	<div id='imageView' class='wrapper' width="70%">
+		<!-- <canvas id='imageView' class='canvas'></canvas> -->
+		<img id='picView' src='../images/1.jpg' height='300' width='300' class='canvas' />	
+	<!-- <div id='tag' class='tag'>	</div> -->
+	</div>
+</div>
+<div>
+	<textarea id='cord' ng-model="textArea">
+	</textarea>
+</div>
